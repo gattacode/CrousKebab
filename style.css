@@ -12,11 +12,11 @@ body {
     margin: 0;
 }
 
-/*Cacher la barre de scrolling mais la garder fonctionnelle
+/*Cacher la barre de scrolling mais la garder fonctionnelle*/
 body::-webkit-scrollbar {
     display: none;
   }
-*/
+
 li{
     list-style: none;
 }
