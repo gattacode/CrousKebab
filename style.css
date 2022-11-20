@@ -63,8 +63,7 @@ span{
 }
 
 .logo{
-    
-    position: absolute;
+    margin-right: auto;
     left: 0%;
     margin-left: 1rem;
     font-size: 1.6rem;
@@ -83,11 +82,12 @@ b {
 .logo img{
     width: 2rem;
 }
+
 footer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    position: relative;
+    margin-top: auto;
     left: 0;
     bottom: 0;
     background-color: #D9D9D9;
@@ -164,6 +164,5 @@ footer p {
     }
     .logofooter{
         padding-bottom: 3rem;
-        padding-top: 3rem;
     }
 }
