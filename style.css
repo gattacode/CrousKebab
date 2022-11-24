@@ -85,14 +85,28 @@ b {
 .logo img{
     width: 2rem;
 }
+.zone1{
+    display: flex;
+    background-image: url("images/fondnuageblanc.png");
+    background-size: 100% auto;
+    height: 100rem;
+
+}
+
+.kebab_image img{
+    position: absolute;
+}
+.kebab_image img:last-child{
+    
+    width: 35%;
+}
+
 
 footer{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     margin-top: auto;
-    left: 0;
-    bottom: 0;
     background-color: #D9D9D9;
 }
 ul{
@@ -100,33 +114,44 @@ ul{
 }
 footer > ul {
     flex-grow: 1;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
     display: flex;
     flex-wrap: wrap;    
 }
 .logofooter{
-    margin-top: 6rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
     align-items: center;
     filter: brightness(9) drop-shadow( 0rem 0.1rem 0.1rem rgba(126, 126, 126, 0.5));
     width: 100%;
 }
-
 .logofooter img{
-    width: 5rem;
+    width: 3rem;
 }
 
 footer> ul > li{
-    width: 25%;
+    width: 20%;
 }
-
+footer h1{
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
 footer p {
     text-align: center;
     width: 100%;
+}
+@media (min-width:761px) and (max-width:1028px) {
+    footer > ul >li:first-child{
+        width: 100%;
+    }
+    footer> ul > li{
+        width: 30%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
 @media (max-width:760px) {
