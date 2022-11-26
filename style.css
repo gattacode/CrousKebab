@@ -126,8 +126,23 @@ button{
     
 }
 p{
-
     margin: 0;
+}
+
+.zone2{
+    background-color: #FFC72A;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.zone2 > p{
+    width: 100%;
+}
+.zone2 div{
+    width: 33%;
 }
 
 footer{
