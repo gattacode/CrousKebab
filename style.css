@@ -87,20 +87,48 @@ b {
 }
 .zone1{
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-image: url("images/fondnuageblanc.png");
     background-size: 100% auto;
-    height: 100rem;
-
+    width: 100%;
 }
 
-.kebab_image img{
-    position: absolute;
+.kebab_image{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 0;
+    margin-right: auto;
 }
-.kebab_image img:last-child{
+.commander{
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+.commander p:first-child{
+    font-size: 4rem;
+    font-family: 'Chalet2',Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: #E99312;
+    color: white;
+    font-family: 'Chalet2',Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+    padding: 5rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
     
-    width: 35%;
 }
+p{
 
+    margin: 0;
+}
 
 footer{
     display: flex;
@@ -147,6 +175,13 @@ footer p {
     footer > ul >li:first-child{
         width: 100%;
     }
+    .zone1{
+        flex-direction: column;
+        
+    }
+    .zone1 div:last-child{
+        width: 100%;
+    }
     footer> ul > li{
         width: 30%;
         padding-left: 3rem;
@@ -183,6 +218,19 @@ footer p {
     }
     span b{
         font-size: 1rem;
+    }
+    .zone1{
+        flex-direction: column;
+        
+    }
+    .zone1 div:last-child{
+        width: 100%;
+    }
+    .kebab_image{
+        width: 100%;
+    }
+    .kebab_image img{
+        width: 100%;
     }
     
     footer> ul > li{
