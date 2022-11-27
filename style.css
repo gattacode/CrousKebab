@@ -7,7 +7,7 @@
     src: url(fonts/Chalet\ NewYorkNineteenSixty\ Regular.otf) format("opentype");
 }
 body {
-    background-color: aliceblue;
+    background-color: #ffffff;
     font-family: 'Chalet',Arial, Helvetica, sans-serif;
     margin: 0;
     overflow-x: hidden;
@@ -157,8 +157,7 @@ p{
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
-
-.zone2 h1 {
+h1 {
     font-family: 'Chalet2',Arial, Helvetica, sans-serif;
     font-weight: 580;
     font-size: 2rem;
@@ -167,6 +166,27 @@ p{
 figure{
     display: flex;
     flex-direction: row;
+}
+.zone3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding:2rem;
+}
+.zone3 div{
+    width: 50%;
+    font-size: 1.4rem;
+}
+.zone3 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zone3 div:first-child{
+    width: 30%;
+    margin: auto;
 }
 footer{
     display: flex;
@@ -209,13 +229,26 @@ footer p {
     text-align: center;
     width: 100%;
 }
+/**pour un ecran de taille moyenne ex:tablette**/
 @media (min-width:761px) and (max-width:1028px) {
     footer > ul >li:first-child{
         width: 100%;
     }
-    .zone1{
+    .zone1, .zone3{
         flex-direction: column;
-        
+    }
+    .zone3{
+        padding: 0;
+        margin: 1.3rem;
+    }
+    .zone3 div:first-child{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .zone3 div img{
+        width: 100%;
     }
     .zone1 div:last-child{
         width: 100%;
@@ -247,7 +280,7 @@ footer p {
         float: left;
     }
 }
-
+/**pour un ecran de petite taille ex:telephone **/
 @media (max-width:760px) {
     #slider {
         overflow: hidden;
@@ -303,9 +336,21 @@ footer p {
     span b{
         font-size: 1rem;
     }
-    .zone1{
+    .zone1,.zone3{
         flex-direction: column;
-        
+    }
+    .zone3{
+        padding: 0;
+        margin: 1.3rem;
+    }
+    .zone3 div:first-child{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .zone3 div img{
+        width: 100%;
     }
     .zone1 div:last-child{
         width: 100%;
