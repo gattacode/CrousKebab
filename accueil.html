@@ -21,7 +21,7 @@
         <div class="zone2" id="fonctionnement">
             <p>Comment ça marche ?</p>
             <div id="slider">
-                <figure>
+                <div class="diapo">
                     <div class="creation">
                         <img alt="livre_cuisine" src="images/livre_cuisine.png">
                         <h1>Crée ta commande</h1>
@@ -37,7 +37,7 @@
                         <h1>Récupère ton Kebab</h1>
                         <p>Utilise le code QR assigné à ta commande</p>
                     </div>
-                </figure>
+                </div>
             </div>
         </div>
         <div class="zone3">
@@ -47,6 +47,45 @@
             </div>
             <div>
                 <img src="images/crous.png">
+            </div>
+        </div>
+        <div class="zone4">
+            <div class="donner_avis">
+                <h1>Laisser un avis</h1>
+                <form>
+                    <label for nom >Nom<input type="text" name="nom"></label>
+                    <label for prenom >Prénom<input type="text" name="prenom"></label>
+                    <div class="note">
+                        <input type="radio" name="note" value="5" id="5"><label for="5">☆</label>
+                        <input type="radio" name="note" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="note" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="note" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="note" value="1" id="1"><label for="1">☆</label>  
+                    </div>
+                    <label for avis>Avis<input type="textarea" name="avis"></label>
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="voir_avis">
+                <div id="slider">
+                    <div class="diapo">
+                        <div>
+                            <img src="images/profilpiclogo.png">
+                            <p><h2>Gatta B.</h2><b>☆☆☆</b>☆☆</p>
+                            <p>Le site est magnifique, cela dit le kebab laisse à désirer.</p>
+                        </div>
+                        <div>
+                            <img src="images/profilpiclogo.png">
+                            <p><h2>Yoni M.</h2><b>☆☆☆☆☆</b></p>
+                            <p>Rien de mieux qu'un kebab sauce algérienne pour bien commencer la journée</p>
+                        </div>
+                        <div class="avis1">
+                            <img src="images/profilpiclogo.png">
+                            <p><h2>Nabile M.</h2><b>☆</b>☆☆☆☆</p>
+                            <p>Je préfère les tacos</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="carte_googlemaps">
