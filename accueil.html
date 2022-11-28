@@ -15,12 +15,12 @@
             <div class="commander">
                 <p>Commande ton <b>Kebab</b></p>
                 <p>et récupere le quand tu veux</p>
-                <a href="commander.html"><button>Commander maintenant</button></a>
+                <form style="display: inline" action="commander.html" method="get"><button>Commander maintenant</button></form>
             </div>
         </div>
         <div class="zone2" id="fonctionnement">
             <p>Comment ça marche ?</p>
-            <div id="slider">
+            <div class="slider">
                 <div class="diapo">
                     <div class="creation">
                         <img alt="livre_cuisine" src="images/livre_cuisine.png">
@@ -46,15 +46,15 @@
                 <p>Comme tous les restaurants Crous de Lyon, nous proposons une offre quotidienne de produits de qualité.</p>
             </div>
             <div>
-                <img src="images/crous.png">
+                <img alt="image_crous" src="images/crous.png">
             </div>
         </div>
         <div class="zone4">
             <div class="donner_avis">
                 <h1>Laisser un avis</h1>
                 <form>
-                    <label for nom >Nom<input type="text" name="nom"></label>
-                    <label for prenom >Prénom<input type="text" name="prenom"></label>
+                    <label for="nom" >Nom</label><input type="text" id="nom">
+                    <label for="prenom" >Prénom</label><input  type="text" id="prenom">
                     <div class="note">
                         <input type="radio" name="note" value="5" id="5"><label for="5">☆</label>
                         <input type="radio" name="note" value="4" id="4"><label for="4">☆</label>
@@ -62,26 +62,26 @@
                         <input type="radio" name="note" value="2" id="2"><label for="2">☆</label>
                         <input type="radio" name="note" value="1" id="1"><label for="1">☆</label>  
                     </div>
-                    <label for avis>Avis<input type="textarea" name="avis"></label>
+                    <label for="avis">Avis</label><textarea id="avis" rows="5"></textarea>
                     <input type="submit">
                 </form>
             </div>
             <div class="voir_avis">
-                <div id="slider">
+                <div class="slider">
                     <div class="diapo">
                         <div>
-                            <img src="images/profilpiclogo.png">
-                            <p><h2>Gatta B.</h2><b>☆☆☆</b>☆☆</p>
+                            <img alt="profil_pic_logo" src="images/profilpiclogo.png">
+                            <h2>Gatta B.</h2><p><b>☆☆☆</b>☆☆</p>
                             <p>Le site est magnifique, cela dit le kebab laisse à désirer.</p>
                         </div>
                         <div>
-                            <img src="images/profilpiclogo.png">
-                            <p><h2>Yoni M.</h2><b>☆☆☆☆☆</b></p>
+                            <img alt="profil_pic_logo" src="images/profilpiclogo.png">
+                            <h2>Yoni M.</h2><p><b>☆☆☆☆☆</b></p>
                             <p>Rien de mieux qu'un kebab sauce algérienne pour bien commencer la journée</p>
                         </div>
                         <div class="avis1">
-                            <img src="images/profilpiclogo.png">
-                            <p><h2>Nabile M.</h2><b>☆</b>☆☆☆☆</p>
+                            <img alt="profil_pic_logo" src="images/profilpiclogo.png">
+                            <h2>Nabile M.</h2><p><b>☆</b>☆☆☆☆</p>
                             <p>Je préfère les tacos</p>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
             </div>
         </div>
         <div class="carte_googlemaps">
-            <div style="width: 100%"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=IUT%20Lyon%201%20Department%20informatique+(Crous%20Kebab)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html">measure area map</a></iframe></div>
+            <div style="width: 100%"><iframe style="width: 100%" height="400" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=IUT%20Lyon%201%20Department%20informatique+(Crous%20Kebab)&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
         </div>
     <footer>
         
