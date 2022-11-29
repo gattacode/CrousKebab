@@ -491,6 +491,11 @@
     width:33%;
     float:left
     }
+
+    .kebab_image {
+        padding-bottom:0rem;
+        
+    }
     
     .zone1,.zone3 {
     flex-direction:column
@@ -509,7 +514,7 @@
     margin:1.3rem
     }
     
-    .zone3 div img,.zone1 div:last-child,.kebab_image,.kebab_image img {
+    .zone3 div img,.zone1 div:last-child {
     width:100%
     }
     
