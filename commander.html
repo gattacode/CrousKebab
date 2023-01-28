@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon_logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Crous Kebab</title>
+</head>
+
+<body>
+    
+    <div class="contenu_c">
+        <div class="zonec1">
+            <div id="commandeprete">
+                <h1>Votre commande a bien été envoyé</h1>
+                <p>Statut: <b>En attente de validation du restaurateur</b></p>
+                <p>Temps d'attente estimé à <b>15 minutes</b></p>
+            </div>
+            <h1>Crée ton <b>Menu</b></h1>
+        </div>
+        <div class="zonec2">
+            <div class="kebab_image2">
+                <div class="kbimage">
+                    <img alt="kebab2" src="images/kebab2.png">
+                    <h1>Compose ton <b>Kebab</b></h1>
+                    <div class="prix">
+                        <p>5€50</p>
+                        <p>Choisis la viande et tout ce qu'il y aura dans ton Kebab</p>
+                    </div>
+                </div>
+                <div class="commande">
+                    <h2>Mode de paiement</h2>
+                    <div class="bouton_m">
+                        <label for="surplace"><input checked form="compose_menu" type="radio" 
+                                name="paiement" id="surplace"><span>Sur place</span></label>
+                    </div>
+                    <div class="bouton_m">
+                        <label for="enligne"><input form="compose_menu" type="radio" 
+                                name="paiement" id="enligne"><span>En ligne</span></label>
+                    </div>
+                    <h2>Commande programmée</h2>
+                    <div class="bouton_m">
+                        <label class="oui" for="oui"><input form="compose_menu" type="radio" name="prog" id="oui">Oui à
+                        </label>
+                        <input form="compose_menu" name="heure" type="time">
+                    </div>
+                    <div class="bouton_m">
+                        <label for="non"><input checked form="compose_menu" type="radio"
+                                name="prog" id="non"><span>Non</span></label>
+                    </div>
+                    <h2>Nom</h2>
+                    <input form="compose_menu" type="text" name="nom2" id="nom2">
+                    <input class="ordi" form="compose_menu" type="submit" value="Commander">
+                    <a class="ordi" href="#valeur_nutritionnelle">Voir valeur
+                        nutritionnelle et allergènes</a>
+                    <div id="valeur_nutritionnelle">
+                        <table>
+                            <tr>
+                                <th>Nutriments</th><th>Kebab :  teneur pour 100g</th>
+                            </tr>
+                            <tr>
+                                <td>Protéines</td><td>17,2g</td>
+                            </tr>
+                            <tr>
+                                <td>Glucides</td><td>15,5g</td>
+                            </tr>
+                            <tr>
+                                <td>Lipides</td><td>10,8g</td>
+                            </tr>
+                            <tr>
+                                <td>Eau</td><td>52g</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">233 kilocalories</td>
+                            </tr>
+                        </table>
+                        <p>Allergènes: traces de gluten, d'oeufs, de soja et de sésame.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <form id="compose_menu" action="#commandeprete" method="get">
+                    <div class="selection">
+                        <h2>Viandes <a href="index.html#originesdesaliments">plus d'infos</a></h2>
+                        <div class="bouton">
+                            <label for="kebab"><input checked type="checkbox" class="checkboxlarge" name="kebab"
+                                    id="kebab"><span>Kebab</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="steak"><input type="checkbox" class="checkboxlarge" name="steak"
+                                    id="steak"><span>Steak</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="kofte"><input type="checkbox" class="checkboxlarge" name="kofte"
+                                    id="kofte"><span>Köfte (Kefta)</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="kebabvege"><input type="checkbox" class="checkboxlarge" name="kebabvege"
+                                    id="kebabvege"><span>Kebab <b>Vege</b></span></label>
+                        </div>
+                        <h2>Garnitures</h2>
+                        <div class="bouton">
+                            <label for="salade"><input type="checkbox" class="checkboxlarge" name="salade"
+                                    id="salade"><span>Salade</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="oignon"><input type="checkbox" class="checkboxlarge" name="oignon"
+                                    id="oignon"><span>Oignon</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="tomate"><input type="checkbox" class="checkboxlarge" name="tomate"
+                                    id="tomate"><span>Tomate</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="frites"><input type="checkbox" class="checkboxlarge" name="frites"
+                                    id="frites"><span>Frites</span></label>
+                        </div>
+                        <h2>Sauces</h2>
+                        <div class="bouton">
+                            <label for="mayonnaise"><input type="checkbox" class="checkboxlarge" name="mayonnaise"
+                                    id="mayonnaise"><span>Mayonnaise</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="andalouse"><input type="checkbox" class="checkboxlarge" name="andalouse"
+                                    id="andalouse"><span>Andalouse</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="ketchup"><input type="checkbox" class="checkboxlarge" name="ketchup"
+                                    id="ketchup"><span>Ketchup</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="algerienne"><input type="checkbox" class="checkboxlarge" name="algerienne"
+                                    id="algerienne"><span>Algérienne</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="cheesy"><input type="checkbox" class="checkboxlarge" name="cheesy"
+                                    id="cheesy"><span>Cheesy</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="barbecue"><input type="checkbox" class="checkboxlarge" name="barbecue"
+                                    id="barbecue"><span>Barbecue</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="harissa"><input type="checkbox" class="checkboxlarge" name="harissa"
+                                    id="harissa"><span>Harissa</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="poivre"><input type="checkbox" class="checkboxlarge" name="poivre"
+                                    id="poivre"><span>Poivre</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="blanche"><input type="checkbox" class="checkboxlarge" name="blanche"
+                                    id="blanche"><span>Blanche</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="tartare"><input type="checkbox" class="checkboxlarge" name="tartare"
+                                    id="tartare"><span>Tartare</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="curry"><input type="checkbox" class="checkboxlarge" name="curry"
+                                    id="curry"><span>Curry</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="biggy"><input type="checkbox" class="checkboxlarge" name="biggy"
+                                    id="biggy"><span>Biggy</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="samourai"><input type="checkbox" class="checkboxlarge" name="samourai"
+                                    id="samourai"><span>Samouraï</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="bresilienne"><input type="checkbox" class="checkboxlarge" name="bresilienne"
+                                    id="bresilienne"><span>Brésilienne</span></label>
+                        </div>
+                        <h1>Suppléments</h1>
+                        <h2>Frites</h2>
+                        <div class="bouton">
+                            <label for="frites2"><input type="checkbox" class="checkboxlarge" name="frites2"
+                                    id="frites2"><span>Frites +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="cheesy_frites"><input type="checkbox" class="checkboxlarge" name="cheesy_frites"
+                                    id="cheesy_frites"><span>Cheesy Frites +1€50</span></label>
+                        </div>
+                        <h2>Boissons</h2>
+                        <div class="bouton">
+                            <label for="coca"><input type="checkbox" class="checkboxlarge" name="coca"
+                                    id="coca"><span>Coca-Cola +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="coca_cherry"><input type="checkbox" class="checkboxlarge" name="coca_cherry"
+                                    id="coca_cherry"><span>Coca-Cola Cherry +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="icetea"><input type="checkbox" class="checkboxlarge" name="icetea"
+                                    id="icetea"><span>Lipton Ice Tea +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="orangina"><input type="checkbox" class="checkboxlarge" name="orangina"
+                                    id="orangina"><span>Orangina +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="fanta"><input type="checkbox" class="checkboxlarge" name="fanta"
+                                    id="fanta"><span>Fanta +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="oasis"><input type="checkbox" class="checkboxlarge" name="oasis"
+                                    id="oasis"><span>Oasis +1€</span></label>
+                        </div>
+                        <h2>Desserts</h2>
+                        <div class="bouton">
+                            <label for="donutsucre"><input type="checkbox" class="checkboxlarge" name="donutsucre"
+                                    id="donutsucre"><span>Donut Sucré +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="tartecitron"><input type="checkbox" class="checkboxlarge" name="tartecitron"
+                                    id="tartecitron"><span>Tarte au citron +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="donutchoco"><input type="checkbox" class="checkboxlarge" name="donutchoco"
+                                    id="donutchoco"><span>Donut Choco +1€</span></label>
+                        </div>
+                        <div class="bouton">
+                            <label for="tartechoco"><input type="checkbox" class="checkboxlarge" name="tartechoco"
+                                    id="tartechoco"><span>Tarte au chocolat +1€</span></label>
+                        </div>
+                        <input class="mobile" form="compose_menu" type="submit" value="Commander">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a class="logofooter" href="index.html"><img alt="image logo crous kebab" src="images/favicon_logo.ico">
+                    <span>Crous Kebab</span></a></li>
+            <li>
+                <h1>Menu</h1>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="commander.html">Commander en ligne</a></li>
+                    <li><a href="commander.html#favoris">Favoris</a></li>
+                    <li><a href="moncompte.html">Mon Compte</a></li>
+                </ul>
+            </li>
+            <li>
+                <h1>Crous Kebab</h1>
+                <ul>
+                    <li><a href="index.html#fonctionnement">Comment ça marche ?</a></li>
+                    <li><a href="index.html#originesdesaliments">Origine des aliments</a></li>
+                    <li><a href="index.html#avis">Avis des utilisateurs</a></li>
+                </ul>
+            </li>
+            <li>
+                <h1>Horaires</h1>
+                <ul>
+                    <li>Du lundi au vendredi</li>
+                    <li>11h15-13h45</li>
+                </ul>
+            </li>
+            <li>
+                <h1>Adresse</h1>
+                <ul>
+                    <li><a
+                            href="https://www.google.com/maps/place/96+Bd+Niels+Bohr,+69100+Villeurbanne/@45.7860101,4.8835292,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4c01bd3bc33f1:0xb4f26b222fd0d13!8m2!3d45.7860101!4d4.8835292">96
+                            Bd Niels Bohr,</a></li>
+                    <li>69100 Villeurbanne</li>
+                </ul>
+            </li>
+        </ul>
+        <p> &#169; 2022-2023 IUT Lyon1 - <a href="docs/MentionsLegales.pdf"><i>Mentions Légales</i></a></p>
+    </footer>
+    <header>
+        <a class="logo" href="index.html"><img alt="image logo crous kebab" src="images/favicon_logo.ico"><span>Crous
+                <b>Kebab</b></span></a>
+        <div class="navbar">
+            <a href="index.html"><img alt="image accueil" src="images/accueillogo.png"><span>Accueil</span></a>
+            <a href="commander.html"><img alt="image logo sac pour commander"
+                    src="images/commanderlogo.png"><span>Commander en ligne</span></a>
+            <a href="moncompte.html"><img alt="image logo mon compte" src="images/accountlogo.png"></a>
+        </div>
+    </header>
+</body>
+
+</html>

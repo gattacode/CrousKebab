@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon_logo.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Crous Kebab</title>
+</head>
+<body>
+        <div class="zone1">
+            <div class="kebab_image">
+                <img alt="kebab" src="images/kebab.png">
+            </div>
+            <div class="commander">
+                <p>Commande ton <b>Kebab</b></p>
+                <p>et récupère le quand tu veux</p>
+                <form action="commander.html" method="get"><button>Commander maintenant</button></form>
+            </div>
+        </div>
+        <div class="zone2" id="fonctionnement">
+            <p>Comment ça marche ?</p>
+            <div class="slider">
+                <div class="diapo">
+                    <div class="creation">
+                        <img alt="livre_cuisine" src="images/livre_cuisine.png">
+                        <h1>Crée ta commande</h1>
+                        <p>Personnalise-la comme tu veux</p>
+                    </div>
+                    <div class="suivi">
+                        <img alt="temps_preparation" src="images/temps_preparation.png">
+                        <h1>Suis la préparation</h1>
+                    </div>
+                    <div class="recuperation">
+                        <img alt="sachet_kebab" src="images/sachet.png">
+                        <h1>Récupère ton Kebab</h1>
+                        <p>Va chercher ta commande</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zone3" id="originesdesaliments">
+            <div>
+                <h1>Tu sais ce que tu consommes</h1>
+                <p>Comme tous les restaurants Crous de Lyon, nous proposons une offre quotidienne de produits de qualité.</p>
+            </div>
+            <div>
+                <img alt="image_crous" src="images/crous.png">
+            </div>
+        </div>
+        <div class="zone4" id="avis">
+            <div class="donner_avis">
+                <h1>Laisser un avis</h1>
+                <form id="avisstar" method="get">
+                    <label for="nom" >Nom</label><input form="avisstar" type="text" id="nom">
+                    <label for="prenom" >Prénom</label><input form="avisstar" type="text" id="prenom">
+                    <div class="note">
+                        <input type="radio" form="avisstar" name="note" value="5" id="5"><label for="5">☆</label>
+                        <input type="radio" form="avisstar" name="note" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" form="avisstar" name="note" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" form="avisstar" name="note" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" form="avisstar" name="note" value="1" id="1"><label for="1">☆</label>  
+                    </div>
+                    <label for="avis_text">Avis</label><textarea form="avisstar" id="avis_text" rows="5"></textarea>
+                    <input form="avisstar" type="submit" value="Envoyer"> 
+                </form>
+            </div>
+            <div class="voir_avis">
+                <div class="slider">
+                    <div class="diapo">
+                        <div>
+                            <img alt="profil_pic_logo" src="images/profilpiclogo.png">
+                            <h2>Gatta B.</h2><p><b>☆☆☆</b>☆☆</p>
+                            <p>Le site est magnifique</p>
+                        </div>
+                        <div>
+                            <img alt="profil_pic_logo" src="images/profilpiclogo.png">
+                            <h2>Yoni M.</h2><p><b>☆☆☆☆☆</b></p>
+                            <p>Que demander de mieux ?</p>
+                        </div>
+                        <div class="avis1">
+                            <img alt="profil_pic_logo" src="images/profilpiclogo.png">
+                            <h2>Nabile M.</h2><p><b>☆</b>☆☆☆☆</p>
+                            <p>Je préfère les tacos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carte_googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.250934235945!2d4.881330415568244!3d45.7862002791061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c01bc53188c7%3A0x80a73f432d9fef19!2sIUT%20LYON%201%20-%20D%C3%A9partement%20Informatique%2C%2069100%20Villeurbanne!5e0!3m2!1sen!2sfr!4v1670602106858!5m2!1sen!2sfr"></iframe>
+        </div>
+    <footer>
+        <ul>
+            <li><a class="logofooter" href="index.html"><img alt="image logo crous kebab" src="images/favicon_logo.ico"> <span>Crous Kebab</span></a></li>
+                    <li><h1>Menu</h1>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="commander.html">Commander en ligne</a></li>
+                            <li><a href="commander.html#favoris">Favoris</a></li>
+                            <li><a href="moncompte.html">Mon Compte</a></li>
+                        </ul>
+                    </li>
+                    <li><h1>Crous Kebab</h1>
+                        <ul>
+                            <li><a href="index.html#fonctionnement">Comment ça marche ?</a></li>
+                            <li><a href="index.html#originesdesaliments">Origine des aliments</a></li>
+                            <li><a href="index.html#avis">Avis des utilisateurs</a></li>
+                        </ul>
+                    </li>        
+                    <li><h1>Horaires</h1>
+                        <ul>
+                            <li>Du lundi au vendredi</li>
+                            <li>11h15-13h45</li>
+                        </ul>
+                    </li>
+                    <li>       
+                    <h1>Adresse</h1>
+                        <ul>
+                            <li><a href="https://www.google.com/maps/place/96+Bd+Niels+Bohr,+69100+Villeurbanne/@45.7860101,4.8835292,17z/data=!3m1!4b1!4m5!3m4!1s0x47f4c01bd3bc33f1:0xb4f26b222fd0d13!8m2!3d45.7860101!4d4.8835292">96 Bd Niels Bohr,</a></li>
+                            <li>69100 Villeurbanne</li>
+                        </ul>
+                    </li>
+        </ul>
+        <p> &#169; 2022-2023 IUT Lyon1 - <a href="docs/MentionsLegales.pdf"><i>Mentions Légales</i></a></p>
+    </footer>
+    <header>
+        <a class="logo" href="index.html"><img alt="image logo crous kebab" src="images/favicon_logo.ico"><span>Crous <b>Kebab</b></span></a>
+        <div class="navbar">
+            <a href="index.html"><img alt="image accueil" src="images/accueillogo.png"><span>Accueil</span></a>
+            <a href="commander.html"><img alt="image logo sac pour commander" src="images/commanderlogo.png"><span>Commander en ligne</span></a>
+            <a href="moncompte.html"><img alt="image logo mon compte" src="images/accountlogo.png"></a>
+        </div>
+    </header>
+</body>
+</html>
